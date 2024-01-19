@@ -1,0 +1,70 @@
+
+// Latin American Spanish Dvorak mapping for developers (Walter Rodriguez)
+partial alphanumeric_keys
+xkb_symbols "ldvd" {
+
+    name[Group1]="Spanish (Latin American Dvorak For Developers)";
+
+    key <TLDE> {[ dollar, asciitilde, notsign ]};
+    key <AE01> {[ ampersand, 1 ]};
+    key <AE02> {[ bracketleft, 2 ]};
+    key <AE03> {[ braceleft, 3, numbersign ]};
+    key <AE04> {[ parenleft, 4 ]};
+    key <AE05> {[ less, 5 ]};
+    key <AE06> {[ greater, 6 ]};
+    key <AE07> {[ parenright, 7 ]};
+    key <AE08> {[ braceright, 8 ]};
+    key <AE09> {[ bracketright, 9 ]};
+    key <AE10> {[ slash, 0 ]};
+    key <AE11> {[ grave, question, questiondown ]};
+    key <AE12> {[ plus, equal ]};
+
+    key <AD01> {[ ntilde, Ntilde, at ]};
+    key <AD02> {[ comma, semicolon ]};
+    key <AD03> {[ period, colon ]};
+    key <AD04> {[ p, P, asterisk ]};
+    key <AD05> {[ y, Y, percent ]};
+    key <AD06> {[ f, F ]};
+    key <AD07> {[ g, G ]};
+    key <AD08> {[ c, C ]};
+    key <AD09> {[ h, H ]};
+    key <AD10> {[ l, L ]};
+    key <AD11> {[ dead_acute, dead_diaeresis ]};
+    key <AD12> {[ asciicircum, exclam, exclamdown ]};
+
+    key <AC01> {[ a, A, aacute, Aacute ]};
+    key <AC02> {[ o, O, oacute, Oacute ]};
+    key <AC03> {[ e, E, eacute, Eacute ]};
+    key <AC04> {[ i, I, iacute, Iacute ]};
+    key <AC05> {[ u, U, uacute, Uacute ]};
+    key <AC06> {[ d, D, udiaeresis, Udiaeresis ]};
+    key <AC07> {[ r, R ]};
+    key <AC08> {[ t, T ]};
+    key <AC09> {[ n, N, ntilde, Ntilde ]};
+    key <AC10> {[ s, S, ssharp, section ]};
+    key <AC11> {[ apostrophe, quotedbl ]};
+    key <BKSL> {[ backslash, bar ]};
+
+    key <LSGT> {[ asterisk, percent ]};
+    key <AB01> {[ minus, underscore ]};
+    key <AB02> {[ q, Q, currency ]};
+    key <AB03> {[ j, J ]};
+    key <AB04> {[ k, K ]};
+    key <AB05> {[ x, X ]};
+    key <AB06> {[ b, B ]};
+    key <AB07> {[ m, M ]};
+    key <AB08> {[ w, W ]};
+    key <AB09> {[ v, V ]};
+    key <AB10> {[ z, Z ]};
+
+    
+    ////////////////////////////////////////////////////////////////////
+    // Cambia de posición las teclas Ctrl y Caps Lock (Bloq Mayús)
+    // Si no necesita cambiar estas teclas, puede comentar o borrar estas
+    // líneas
+    key <LCTL> {[ Caps_Lock ]};
+    key <CAPS> {[ Control_L ]};
+    ////////////////////////////////////////////////////////////////////
+
+    include "level3(ralt_switch)"
+};
