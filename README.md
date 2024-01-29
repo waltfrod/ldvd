@@ -35,7 +35,7 @@ sudo cp /usr/share/X11/xkb/rules/evdev.lst /usr/share/X11/xkb/rules/evdev.lst.ba
 Agregar el contenido del archivo `./Linuxldvd.xmap` al final del archivo `/usr/share/X11/xkb/simbols/latam`:
 
 ```bash
-cat ./Linuxldvd.xmap >> /usr/share/X11/xkb/symbols/latam
+cat ./Linux/ldvd.xmap >> /usr/share/X11/xkb/symbols/latam
 ```
 
 A continuación, editar el archivo `/usr/share/X11/xkb/rules/evdev.xml` y agregar la variante dentro de la distribución `latam` de
@@ -115,7 +115,7 @@ loadkeys ldvd
 Para Windows hay dos formas para instalar la distribución:
 
 1. Ejecutar el archivo `./Windows/install/setup.exe`.
-2. Abrir el archivo `ldvd.klc` con la aplicación
+2. Abrir el archivo `./Windows/ldvd.klc` con la aplicación
   [Microsoft Keyboard Layout Creator](https://www.microsoft.com/en-us/download/details.aspx?id=102134). Se puede editar la
   configuración y generar el instalador para luego ejecutarlo como en el paso 1.
 
